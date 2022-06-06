@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body{
+      background: linear-gradient(to right, #6699ff 0%, #cc66ff 132%); 
+      display: flex;
+      justify-content: center;
+    }
+
+    #main{
+      background-color: white;
+      width: 25%;
+      height: 500px;
+      text-align: center;
+      border-radius: 10px;
+      margin-top: 30px;
+    }
+
+    h1{
+      padding-top: 50px;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    #main>div:nth-child(2){
+      display: flex;
+      flex-direction: column;
+      height: 40%;
+      align-items: center;
+      justify-content: center;
+    }
+    input{
+      border: none;
+      border-bottom: 2px solid gray;
+      width: 80%;
+      margin-top: 30px;
+    }
+    button{
+      border: none;
+      background: linear-gradient(to right, #6699ff 0%, #cc66ff 132%); 
+      margin-top: 30px;
+      width: 80%;
+      height: 45px;
+      color: white;
+    }
+    button:hover{
+      background: linear-gradient(to right, #2f5399 0%, #8444a3 132%); 
+      font-size: large;
+    }
+    #main>div:nth-child(3){
+      margin-top: 40px;
+    }
+    p{
+      color: gray;
+    }
+    a{
+      color: blue;
+    }
+  </style>
+</head>
+<body>
+  <div id="main">
+    <h1>Login</h1>
+    <div>
+      <input type="email" placeholder="Email">
+      <input type="password" placeholder="Password">
+      <button>Login</button>
+    </div>
+    <div>
+      <p>Forgot <a>Password</a>?</p>
+      <p>Don't have an account? <a>Sign up</a></p>
+    </div>
+  </div>
+</body>
+</html>
